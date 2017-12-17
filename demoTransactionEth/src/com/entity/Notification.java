@@ -14,13 +14,13 @@ public class Notification {
     @Index
     private String type;
     @Index
-    private HashMap<String, Object> data;
+    private HashMap<String, Object> data = new HashMap<>();
     @Index
-    private HashMap<String, Object> user;
+    private HashMap<String, Object> user= new HashMap<>();
     @Index
-    private HashMap<String, Object> account;
+    private HashMap<String, Object> account= new HashMap<>();
     @Index
-    private HashMap<String,Object> additionalData;
+    private HashMap<String,Object> additionalData= new HashMap<>();
     @Index
     private String created_at;
     @Index
@@ -29,8 +29,8 @@ public class Notification {
     private final String resource = "notification";
     @Index
     private String resource_path;
-    private HashMap<String, Object> subscriber;
-    private HashMap<String, Object> delivery_response;
+    private HashMap<String, Object> subscriber= new HashMap<>();
+    private HashMap<String, Object> delivery_response= new HashMap<>();
     private int delivery_attempts;
 
     public Notification() {
